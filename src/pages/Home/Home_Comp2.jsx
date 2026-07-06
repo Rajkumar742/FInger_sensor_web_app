@@ -43,30 +43,30 @@ export default function Home_Comp2() {
    {/* product car 2 */}
    <h1 className='mt-10 font-bold text-2xl'>Advanced Security Products</h1>
 
-   <div className=" mt-10 flex gap-5 overflow-x-auto overflow-y-hidden pb-4 scrollbar-hide snap-x snap-mandatory">
+   <div className=" mt-10 flex gap-5 overflow-x-auto overflow-y-hidden pb-4 scrollbar-hide snap-x snap-mandatory bg-slate-50">
 
-  <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg">
+  <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg bg-white">
     <img src={mbvl20} alt="mbvl20" className="w-full rounded-lg" />
     <p className="mt-3 py-3 ">
       <span className='font-bold'>Mb20 VL</span> <br />Smart biometric attendance system. <br />Face and fingerprint verification with fast access <br /> control.
     </p>
   </div>
 
-  <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg">
+  <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg bg-white">
     <img src={vf300pro} alt="vf300pro" className="w-full rounded-lg" />
     <p className="mt-3 p-3">
     <span className='font-bold'>VF300 PRO</span><br /> RFID & fingerprint attendance device. <br /> Smart access control with biometric security.
     </p>
   </div>
 
-   <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg">
+   <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg bg-white">
     <img src={vf300pro} alt="vf300pro" className="w-full rounded-lg" />
     <p className="mt-3 p-3">
     <span className='font-bold'>VF300 PRO</span><br /> RFID & fingerprint attendance device. <br /> Smart access control with biometric security.
     </p>
   </div>
 
-   <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg">
+   <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg bg-white">
     <img src={vf300pro} alt="vf300pro" className="w-full rounded-lg" />
     <p className="mt-3 p-3">
     <span className='font-bold'>VF300 PRO</span><br /> RFID & fingerprint attendance device. <br /> Smart access control with biometric security.
