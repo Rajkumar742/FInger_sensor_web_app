@@ -1,7 +1,8 @@
 import React from 'react'
 import Brand_clints from '../../components/Brand_clints'
 import Explore_solution from '../../components/buttons/Explore_solution'
-
+import Youtube_video from './Youtube_video';
+<Content></Content>
 // Product_card _imgs
 
 import smartlocks from "../../assets/Product_card_img/product-card-1.png";
@@ -11,6 +12,7 @@ import Accescontrol from "../../assets/Product_card_img/product-card-3.png";
 import mbvl20 from "../../assets/Product_card_img/product-card-5.png";
 import vf300pro from "../../assets/Product_card_img/product-card-6.png";
 import bioenterx from "../../assets/Product_card_img/product-card-4.png";
+import Content from './Content';
 
 export default function Home_Comp2() {
   return (
@@ -79,6 +81,14 @@ export default function Home_Comp2() {
 
  
 
+</div>
+
+{/* 
+you tube vieo */}
+
+<div className='my-13'>
+  <Youtube_video></Youtube_video>
+  <Content></Content>
 </div>
 
    <div>
