@@ -2,7 +2,9 @@ import React from 'react'
 import Brand_clints from '../../components/Brand_clints'
 import Explore_solution from '../../components/buttons/Explore_solution'
 import Youtube_video from './Youtube_video';
-<Content></Content>
+import Smart_secrity_system from './Smart_secrity_system';
+import Frequently_asked from '../../components/Frequently_asked';
+
 // Product_card _imgs
 
 import smartlocks from "../../assets/Product_card_img/product-card-1.png";
@@ -13,6 +15,7 @@ import mbvl20 from "../../assets/Product_card_img/product-card-5.png";
 import vf300pro from "../../assets/Product_card_img/product-card-6.png";
 import bioenterx from "../../assets/Product_card_img/product-card-4.png";
 import Content from './Content';
+import Footer from '../../components/Footer';
 
 export default function Home_Comp2() {
   return (
@@ -30,22 +33,24 @@ export default function Home_Comp2() {
 
    {/* Product_card_1 */}
 
-   <div className='flex mt-6 w-full h-70 gap-3.5 overflow-x-auto'>
-      <img src={smartlocks} alt="smart locks" />
-      <img src={biometricsystem} alt="biometric system" />
-      <img src={Accescontrol} alt="Acces control" />
-      <img src={smartlocks} alt="smart locks" />
-      <img src={biometricsystem} alt="biometric system" />
-      <img src={Accescontrol} alt="Acces control" />
-       <img src={smartlocks} alt="smart locks" />
-      <img src={biometricsystem} alt="biometric system" />
-      <img src={Accescontrol} alt="Acces control" />
-   </div>
+<div className="flex mt-6 w-full h-70 gap-3.5 overflow-x-auto hide-scrollbar">
+  <img src={smartlocks} alt="smart locks" />
+  <img src={biometricsystem} alt="biometric system" />
+  <img src={Accescontrol} alt="Access control" />
+  <img src={smartlocks} alt="smart locks" />
+  <img src={biometricsystem} alt="biometric system" />
+  <img src={Accescontrol} alt="Access control" />
+  <img src={smartlocks} alt="smart locks" />
+  <img src={biometricsystem} alt="biometric system" />
+  <img src={Accescontrol} alt="Access control" />
+</div>
 
    {/* product car 2 */}
+
+
    <h1 className='mt-10 font-bold text-2xl'>Advanced Security Products</h1>
 
-   <div className=" mt-10 flex gap-5 overflow-x-auto overflow-y-hidden pb-4 scrollbar-hide snap-x snap-mandatory bg-slate-50">
+   <div className="mt-10 flex gap-5 overflow-x-auto overflow-y-hidden pb-4 hide-scrollbar snap-x snap-mandatory bg-slate-50">
 
   <div className="min-w-full sm:min-w-[48%] lg:min-w-[32%] flex-shrink-0 snap-start border-4 border-white rounded-lg shadow-lg bg-white">
     <img src={mbvl20} alt="mbvl20" className="w-full rounded-lg" />
@@ -89,6 +94,9 @@ you tube vieo */}
 <div className='my-13'>
   <Youtube_video></Youtube_video>
   <Content></Content>
+  <Smart_secrity_system></Smart_secrity_system>
+  <Frequently_asked></Frequently_asked>
+  <Footer></Footer>
 </div>
 
    <div>
