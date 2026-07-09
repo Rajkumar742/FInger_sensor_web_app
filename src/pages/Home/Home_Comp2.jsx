@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Brand_clints from '../../components/Brand_clints'
 import Explore_solution from '../../components/buttons/Explore_solution'
 import Youtube_video from './Youtube_video';
 import Smart_secrity_system from './Smart_secrity_system';
 import Frequently_asked from '../../components/Frequently_asked';
+
+import { useNavigate } from "react-router-dom";
 
 // Product_card _imgs
 
@@ -16,8 +19,10 @@ import vf300pro from "../../assets/Product_card_img/product-card-6.png";
 import bioenterx from "../../assets/Product_card_img/product-card-4.png";
 import Content from './Content';
 import Footer from '../../components/Footer';
+import Trusted_bar from '../../components/Trusted_bar';
 
 export default function Home_Comp2() {
+  const navigate = useNavigate();
   return (
     <div className='w-full h-screen  px-10'>
      <Brand_clints></Brand_clints>
@@ -34,15 +39,16 @@ export default function Home_Comp2() {
    {/* Product_card_1 */}
 
 <div className="flex mt-6 w-full h-70 gap-3.5 overflow-x-auto hide-scrollbar">
-  <img src={smartlocks} alt="smart locks" />
-  <img src={biometricsystem} alt="biometric system" />
-  <img src={Accescontrol} alt="Access control" />
-  <img src={smartlocks} alt="smart locks" />
-  <img src={biometricsystem} alt="biometric system" />
-  <img src={Accescontrol} alt="Access control" />
-  <img src={smartlocks} alt="smart locks" />
-  <img src={biometricsystem} alt="biometric system" />
-  <img src={Accescontrol} alt="Access control" />
+ <img src={smartlocks}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+ <img src={biometricsystem}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+  <img src={Accescontrol}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+<img src={smartlocks}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+ <img src={biometricsystem}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+  <img src={Accescontrol}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+<img src={smartlocks}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+ <img src={biometricsystem}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+  <img src={Accescontrol}alt="Smart Locks"className="cursor-pointer"onClick={() => navigate("/mb20")}/>
+
 </div>
 
    {/* product car 2 */}
@@ -94,6 +100,7 @@ you tube vieo */}
 <div className='my-13'>
   <Youtube_video></Youtube_video>
   <Content></Content>
+  <Trusted_bar></Trusted_bar>
   <Smart_secrity_system></Smart_secrity_system>
   <Frequently_asked></Frequently_asked>
   <Footer></Footer>

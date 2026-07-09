@@ -1,5 +1,6 @@
 import React from "react";
 import frame1 from "../assets/Frame 1.png";
+import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -28,10 +29,14 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="list-none space-y-3">
-              <li className="hover:text-red-500 cursor-pointer">Home</li>
-              <li className="hover:text-red-500 cursor-pointer">About Us</li>
-              <li className="hover:text-red-500 cursor-pointer">Solutions</li>
-              <li className="hover:text-red-500 cursor-pointer">Services</li>
+              
+              
+            
+             
+              <li className="hover:text-red-500 cursor-pointer"><Link to="/mb20">Home</Link></li>
+              <li className="hover:text-red-500 cursor-pointer"><Link to="/mb20">About Us</Link></li>
+              <li className="hover:text-red-500 cursor-pointer">  <Link to="/mb20">Solutions</Link></li>
+              <li className="hover:text-red-500 cursor-pointer">  <Link to="/mb20">Services</Link></li>
             </ul>
           </div>
 
@@ -40,16 +45,16 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Products</h3>
             <ul className="list-none space-y-3">
               <li className="hover:text-red-500 cursor-pointer">
-                Biometric Systems
+                <Link to="/mb20">Biometric Systems</Link>
               </li>
               <li className="hover:text-red-500 cursor-pointer">
-                Smart Door Locks
+              <Link to="/mb20">  Smart Door Locks</Link>
               </li>
               <li className="hover:text-red-500 cursor-pointer">
-                Access Control
+                <Link to="/mb20">Access Control</Link>
               </li>
               <li className="hover:text-red-500 cursor-pointer">
-                Boom Barriers
+               <Link to="/mb20"> Boom Barriers</Link>
               </li>
             </ul>
           </div>
@@ -59,13 +64,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="list-none space-y-3">
               <li className="hover:text-red-500 cursor-pointer">
-                Installation Support
+               <Link to="/mb20"> Installation Support</Link>
               </li>
               <li className="hover:text-red-500 cursor-pointer">
-                Technical Maintenance
+               <Link to="/mb20"> Technical Maintenance</Link>
               </li>
               <li className="hover:text-red-500 cursor-pointer">
-                Cloud Integration
+              <Link to="/mb20">  Cloud Integration</Link>
               </li>
             </ul>
           </div>

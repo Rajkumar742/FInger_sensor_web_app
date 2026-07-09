@@ -1,8 +1,12 @@
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import MB20 from "./pages/fingerprint/Mb20";
+
 export default function App() {
   return (
-    <div>
-      <Home></Home>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/mb20" element={<MB20 />} />
+    </Routes>
   );
 }

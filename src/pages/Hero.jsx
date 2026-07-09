@@ -4,38 +4,43 @@ import bgimg from "../assets/hero.png";
 export default function Hero() {
   return (
     <section
-      className="w-full min-h-screen bg-cover bg-center"
+      className="relative w-full h-[450px] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bgimg})` }}
     >
-      <div className="max-w-7xl mx-auto min-h-screen flex flex-col lg:flex-row items-center px-6 md:px-12 lg:px-16">
-        
-        {/* Left Content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center gap-6 text-white">
+      {/* Overlay */}
+      <div className="absolute inset-0 "></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto min-h-[100svh] flex items-center px-6 sm:px-10 lg:px-16">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start  text-center lg:text-left gap-5 md:gap-6 text-white">
           
-          <button className="w-fit border-2 border-white rounded-full px-5 py-2">
+          {/* Badge */}
+          <button className="border border-white rounded-full mt-[-90px] px-5 py-2 text-sm md:text-base">
             Invite Only
           </button>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          {/* Heading */}
+          <h1 className="font-bold leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-5xl">
             Start.
-            Scale. 
+            Scale.
             Grow.
           </h1>
 
-          <p className="text-base md:text-lg leading-7 max-w-lg">
+          {/* Description */}
+          <p className="max-w-md md:max-w-lg text-sm sm:text-base md:text-lg leading-7 text-gray-200">
             AI-powered biometric and smart access solutions designed
             for workplaces, offices, and enterprises with advanced
             technology.
           </p>
 
-            <button type="button" class="w-50 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-base text-sm py-2.5 text-center leading-5">Explore Solutions</button>
+          {/* Button */}
+          <button
+            type="button"
+            className="px-8 py-3 rounded-lg bg-gradient-to-r bg-white text-black hover:from-blue-600 hover:to-blue-800 transition-all duration-300 text-black font-medium text-sm md:text-base"
+          >
+            Explore Solutions
+          </button>
         </div>
-
-        {/* Right Side */}
-        <div className="hidden lg:block lg:w-1/2">
-          {/* Add an image or illustration here if needed */}
-        </div>
-
       </div>
     </section>
   );
