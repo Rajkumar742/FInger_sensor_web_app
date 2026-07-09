@@ -22,24 +22,41 @@ export default function Brand_clients() {
   ];
 
   return (
-    <section className="w-full py-2 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        
+    <section className="w-full py-4 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
 
-        <div className="flex  justify-center items-center gap-8 md:gap-12">
+        {/* Mobile View */}
+        <div className="flex md:hidden overflow-x-auto hide-scrollbar">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="flex justify-center items-center w-28 sm:w-32 md:w-30 lg:w-40"
+              className="flex-shrink-0 w-14 gap-13 flex justify-center items-center"
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+                className="h-10 w-auto object-contain transition-transform duration-300 hover:scale-110"
               />
             </div>
           ))}
         </div>
+
+        {/* Tablet & Desktop View */}
+        <div className="hidden md:flex justify-between items-center gap-8">
+          {brands.map((brand) => (
+            <div
+              key={brand.name}
+              className="flex justify-center items-center"
+            >
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
